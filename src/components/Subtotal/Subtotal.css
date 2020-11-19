@@ -4,20 +4,24 @@
   background-color: #f3f3f3;
   border: #ddd;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 3px;
 }
 
 .subtotal__title {
   font-size: 18px;
-  margin-bottom: 15px;
 }
 
 .gift-option {
-  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
 }
 
 .gift-option > span {
   margin-left: 10px;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .checkout-button {
@@ -26,4 +30,8 @@
   background-color: #f0c14b;
   font-size: 16px;
   outline: none;
+}
+
+.total-price {
+  font-weight: bolder;
 }
