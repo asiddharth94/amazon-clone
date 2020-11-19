@@ -25,14 +25,14 @@ function Home() {
             title={titles[0]}
             price="11.96"
             rating="5"
-            imgSrc={productOne}
+            image={productOne}
           />
           <Product
             id="87342345"
             title={titles[1]}
             price="239"
             rating="4"
-            imgSrc={productOne}
+            image={productOne}
           />
         </div>
         <div className="home__row">
@@ -41,21 +41,21 @@ function Home() {
             title={titles[2]}
             price="199.99"
             rating="3"
-            imgSrc={productOne}
+            image={productOne}
           />
           <Product
             id="67583948"
             title={titles[3]}
             price="98.99"
             rating="5"
-            imgSrc={productOne}
+            image={productOne}
           />
           <Product
             id="54673475"
             title={titles[4]}
             price="598.99"
             rating="4"
-            imgSrc={productOne}
+            image={productOne}
           />
         </div>
         <div className="home__row">
@@ -64,7 +64,7 @@ function Home() {
             title={titles[5]}
             price="1094.98"
             rating="4"
-            imgSrc={productOne}
+            image={productOne}
           />
         </div>
       </div>
