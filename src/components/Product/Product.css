@@ -1,6 +1,8 @@
 .product {
-  z-index: 1000;
+  z-index: 2;
   margin: 0px 10px;
+  width: 100%;
+  margin-top: 20px;
 }
 
 .product__container {
@@ -8,6 +10,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-end;
   max-height: 400px;
   min-width: 100px;
 }
