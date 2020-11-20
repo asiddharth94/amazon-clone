@@ -1,4 +1,5 @@
 import React from "react";
+import { useStateValue } from "../../StateProvider";
 
 import "./BasketItem.css";
 
@@ -7,6 +8,16 @@ function BasketItem({ id, title, image, price, rating }) {
   for (let index = 0; index < Number(rating); index++) {
     ratings.push(<p key={index}>⭐</p>);
   }
+
+  const [state, dispatch] = useStateValue();
+
+  const removeFromBasket = () => {
+    dispatch({
+      type: "REMOVE_FROM_BASKET",
+      id: id,
+    });
+  };
+
   return (
     <div className="basket-item">
       <div className="basket-item__left">
@@ -21,6 +32,9 @@ function BasketItem({ id, title, image, price, rating }) {
           <strong>{price}</strong>
         </p>
         <div className="product__rating">{ratings}</div>
+        <div className="remove__button" onClick={removeFromBasket}>
+          Remove from Cart
+        </div>
       </div>
     </div>
   );
